@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="pt-[28px]">
+        <!-- Top Nav Bar -->
+        <nav class="flex justify-between items-center mb-[20px] px-[55px]">
+            <img src="Images/logo.png" alt="">
+            <form action="" class="flex items-center border-solid border-[#64B496] border-2  w-5/12 justify-around rounded ">
+                <input type="text" placeholder="Search for items..." class="p-[8px] grow outline-none ">
+                <div class="flex gap-[18px] items-center p-0 border-l-2 border-l-solid border-l-[#64B496]">
+                    <select name="" id="" class="p-[8px] outline-none">
+                        <option value="">All Categories</option>
+                        <option value="men's">Men's</option>
+                        <option value="women's">Women's</option>
+                        <option value="electronics">Electronics</option>
+                    </select>
+                    <button class="bg-[#64B496] py-[8px] px-[10px] text-white">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="flex items-center gap-[28px] font-medium">
+                <button class="relative" id="account">
+                    <i class="ri-user-line"></i>
+                    <label for="">Account</label>
+                    <div class="p-[4px] shadow-md bg-white w-[100px] hidden flex-col absolute top-[30px] right-0 gap-[5px] border-slate-200 border-solid border-1px" id="account-menu">
+                        <a href="register.html" class="w-full text-left px-3 font-extralight hover:bg-gray-100">Register</a>
+                        <a href="checkout.html" class="w-full text-left px-3 font-extralight hover:bg-gray-100">Checkout</a>
+                        <a href="login.html" class="w-full text-left px-3 font-extralight hover:bg-gray-100">Login</a>
+                    </div>
+                </button>
+
+                <a href="wishlist.html">
+                    <button >
+                        <i class="ri-heart-line"></i>
+                        <label for="">Wishlist</label>
+                    </button>
+                </a>
+
+                <button>
+                    <i class="ri-shopping-cart-line"></i>
+                    <label for="">Cart</label>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Bottom Nav Bar -->
+         <nav class="flex items-center justify-between mb-[20px] px-[55px]">
+            <button class="p-[7px] border-slate-300 border-solid border-[1px] w-[38px]"><i class="ri-menu-2-line"></i></button>
+            <div class="ml-[28px]">
+                <ul class="flex items-center gap-[30px]">
+                    <li>Home</li>
+                    <li>
+                        <label for="">Category</label>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </li>
+                    <li>
+                        <label for="">Products</label>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </li>
+                    <li>
+                        <label for="">Pages</label>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </li>
+                    <li>
+                        <label for="">Blogs</label>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </li>
+                    <li>
+                        <label for="">Elements</label>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </li>
+                </ul>
+            </div>
+            <select name="" id="" class="py-[7px] px-[10px] border-slate-300 border-solid border-[1px] w-2/12">
+                <option value="new_york">New York</option>
+                <option value="new_york">Chicago</option>
+                <option value="new_york">Canada</option>
+                <option value="new_york">Washington</option>
+                <option value="new_york">San Andreas</option>
+            </select>
+         </nav>
+
+         <!-- Hero Section -->
+         <div class="w-full h-[80px] bg-[#E4F2ED] flex items-center justify-between px-[55px]">
+            <p class="font-semibold">Checkout</p>
+            <p><span class="text-[#64B496]">Home</span> - Checkout</p>
+         </div>
+
+         <div class=" mx-auto my-16 w-10/12 p-[6px] flex gap-y-[7px]">
+           <div class="flex flex-col">
+            <div class="w-[400px] p-5 space-y-4">
+                <div class="border rounded-md p-4">
+                    <div class="space-y-3">
+                        <h1 class="font-bold text-xl">Summary</h1>
+                        <div class="flex justify-between items-center">
+                            <label for="" class="text-gray-500 font-semibold">Sub-Total</label>
+                            <label for="" class="font-bold">$80.00</label>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <label for="" class="text-gray-500 font-semibold">Delivery Charges</label>
+                            <label for="" class="font-bold">$80.00</label>
+                        </div>
+                    </div>
+                    <div class="border mt-[12px]"></div>
+                    <div  class="space-y-6 mt-4">
+                        <div class="flex justify-between items-center">
+                            <label for="" class="font-semibold">Total Amount</label>
+                            <label for="" class="font-bold">$80.00</label>
+                        </div>
+        
+                        <div class="flex gap-4">
+                            <img src="Images/w1.jpg" alt="" class="w-[80px]">
+                            <div>
+                                <label for="">Fresh Blueberry</label>
+                                <div class="text-amber-500">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                                <div>
+                                    <label for="" class="text-[#64B496] font-bold">$120.25</label>
+                                    <del class="text-xs text-gray-500">$123.25</del>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="flex gap-4">
+                            <img src="Images/w2.jpg" alt="" class="w-[80px]">
+                            <div>
+                                <label for="">Fresh Hazel Nuts</label>
+                                <div class="text-amber-500">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                                <div>
+                                    <label for="" class="text-[#64B496] font-bold">$120.25</label>
+                                    <del class="text-xs text-gray-500">$123.25</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border rounded-md p-4">
+                    <div class="space-y-3">
+                        <h1 class="font-bold text-xl">Delivery Method</h1>
+                        <p class="text-gray-500">Please select the preferred shipping order to be used on this order</p>
+                        <div class="flex gap-[138px] items-center">
+                            <label for="" class="font-bold">Free-Shippping</label>
+                            <label for="" class="font-bold">Flat Rate</label>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="rate">
+                                <label for="" class="text-gray-500">Rate $0.00</label>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="rate">
+                                <label for="" class="text-gray-500">Rate $5.00</label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div  class="space-y-5 mt-4">
+                        <label for="" class="font-semibold">Add Comments about your Order</label>
+                        <textarea name="" id="" class="border rounded-md w-full p-3" rows="3" placeholder="Comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="border rounded-md p-4">
+                    <div class="space-y-3">
+                        <h1 class="font-bold text-xl">Payment Method</h1>
+                        <p class="text-gray-500">Please select the preferred payment method to be used on this order</p>
+                        <div class="flex flex-col space-y-3">
+                            <div class="flex items-center gap-2">
+                                <input type="radio" name="payment">
+                                <label for="" class="text-gray-500">Cash on Delivery</label>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <input type="radio" name="payment">
+                                <label for="" class="text-gray-500">UPI</label>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <input type="radio" name="payment">
+                                <label for="" class="text-gray-500">Bank Transfer</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="border rounded-md p-4 space-y-3">
+                    <h1 class="font-bold text-xl">Payment Method</h1>
+                    <img src="Images/payment.png" class="w-full" alt="">
+                </div>
+            </div>
+            
+           </div>
+           <div class="p-5 space-y-5 flex-1">
+            <div class="border rounded-md p-4 w-full">
+                <div class="space-y-5">
+                    <h1 class="font-bold text-xl mb-[8px]">New Customer</h1>
+                    <div class="space-y-3">
+                        <label for="" class="font-semibold text-l">Checkout Options</label>
+                    <div class="flex justify-between items-center w-[50%]">
+                        <div class="flex items-center gap-x-3">
+                            <input type="radio" name="account">
+                            <label for="" class="text-gray-500">Register Account</label>
+                        </div>
+
+                        <div class="flex items-center gap-x-3">
+                            <input type="radio" name="account">
+                            <label for="" class="text-gray-500">Guest Account</label>
+                        </div>
+                    </div>
+                    </div>
+                    <label for="" class="text-gray-500 mt-[10px] w-[78%] block">By creating an account you will b able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made</label>
+
+                    <button class="bg-[#64B496] py-2 px-4 rounded-md text-white font-semibold">Continue</button>
+
+                    <h1 class="font-bold text-xl mb-[8px]">Returning Customer</h1>
+
+                    <div class="flex flex-col gap-4">
+                        <label for="" class="font-medium">Email Address</label>
+                        <input type="email" name="email" required="true" placeholder="Enter your email address" class="outline-none border py-[6px] px-[8px]">
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <label for="" class="font-medium">Password</label>
+                        <input type="password" name="email" required="true" placeholder="Enter your password" class="outline-none border py-[6px] px-[8px]">
+                    </div>
+
+                    <div class="flex items-center gap-[18px] mt-[20px]">
+                        <button class="bg-[#64B496] py-2 px-4 rounded-md text-white font-semibold">Login</button>
+                        <a href="Forgot_Password.html">Forgot Password ?</a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="border rounded-md p-4 w-full">
+                <div class="space-y-5">
+                    <h1 class="font-bold text-xl mb-[8px]">Billing Details</h1>
+                    <div class="space-y-3">
+                        <label for="" class="font-semibold text-l">Checkout Options</label>
+                    <div class="flex justify-between items-center w-[70%]">
+                        <div class="flex items-center gap-x-3">
+                            <input type="radio" name="account">
+                            <label for="" class="text-gray-500">I want to use an  existing address</label>
+                        </div>
+
+                        <div class="flex items-center gap-x-3">
+                            <input type="radio" name="account">
+                            <label for="" class="text-gray-500">I want to use new address</label>
+                        </div>
+                    </div>
+                    </div>
+                    
+
+                    <div class="grid grid-cols-2 gap-4">
+
+                        <div class="flex flex-col gap-4">
+                            <label for="" class="font-medium">First Name*</label>
+                            <input type="text" name="firstname" required="true" placeholder="Enter your first name" class="outline-none border py-[6px] px-[8px]">
+                        </div>
+    
+                        <div class="flex flex-col gap-4">
+                            <label for="" class="font-medium">Last Name*</label>
+                            <input type="text" name="lastname" required="true" placeholder="Enter your last name" class="outline-none border py-[6px] px-[8px]">
+                        </div>
+
+                        <div class="flex flex-col gap-4 col-span-2">
+                            <label for="" class="font-medium">Address</label>
+                            <input type="text" name="address" placeholder="Address Line 1" required="true" class=" py-[6px] px-[8px] outline-none border">
+                        </div>
+
+                        <div class="flex flex-col gap-4">
+                            <label for="" class="font-medium">City*</label>
+                            <select name="city" id="" class="text-gray-500 py-[6px] px-[8px] border rounded">
+                                <option value="">City</option>
+                                <option value="asansol">Asansol</option>
+                                <option value="kolkata">Kolkata</option>
+                            </select>
+                        </div>
+    
+                        <div class="flex flex-col gap-4">
+                            <label for="" class="font-medium">Post Code*</label>
+                            <input type="number" name="postcode" required="true" placeholder="Post Code" class="outline-none border py-[6px] px-[8px]">
+                        </div>
+
+                        <div class="flex flex-col gap-4">
+                            <label for="" class="font-medium">Country*</label>
+                            <select name="country" id="" class="text-gray-500 py-[6px] px-[8px] border rounded">
+                                <option value="">Country</option>
+                                <option value="india">India</option>
+                                <option value="usa">USA</option>
+                                <option value="newzealand">New Zealand</option>
+                                <option value="australia">Australia</option>
+                            </select>
+                        </div>
+    
+                        <div class="flex flex-col gap-4">
+                            <label for="" class="font-medium">Region State</label>
+                            <input type="text" name="region/state" required="true" placeholder="Region/State" class="outline-none border py-[6px] px-[8px]">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <button class="bg-[#64B496] py-2 px-4 rounded-md text-white font-semibold float-right">Please Order</button>
+           </div>
+         </div>
+
+
+        <!-- Footer -->
+         <footer class="bg-[#F7F7F8] flex flex-col gap-[14px] w-full px-[55px] pt-[55px]">
+            <div class="flex ">
+                <div class="p-[12px] space-y-4 w-[380px] ">
+                    <img src="Images/logo.png" alt="">
+                    <p class="text-slate-600">Carrot is the biggest market of grocery products. Get your daily needs from our store.</p>
+                    <div class="flex items-start gap-[8px] text-slate-500">
+                        <i class="ri-map-pin-line"></i>
+                        <address>51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783, USA</address>
+                    </div>
+    
+                    <div class="flex items-center gap-[8px] text-slate-500">
+                        <i class="ri-mail-line"></i>
+                        <p>example@email.com</p>
+                    </div>
+    
+                    <div class="flex items-center gap-[8px] text-slate-500">
+                        <i class="ri-phone-line"></i>
+                        <p>+91 123 4567890</p>
+                    </div>
+                </div>
+                <div class="p-[12px] space-y-4 ml-[35px] w-[350px]">
+                    <h3 class="text-2xl font-[500] ">Company</h3>
+                    <p class="text-slate-500">About Us</p>
+                    <p class="text-slate-500">Daily Information</p>
+                    <p class="text-slate-500">Privacy Policy </p>
+                    <p class="text-slate-500">Terms & Conditions</p>
+                    <p class="text-slate-500">Contact Us</p>
+                    <p class="text-slate-500">Support Center</p>
+                </div>
+                <div class="p-[12px] space-y-4  w-[350px]">
+                    <h3 class="text-2xl font-[500] ">Category</h3>
+                    <p class="text-slate-500">Fashion & Clothes</p>
+                    <p class="text-slate-500">Dairy & Bakery</p>
+                    <p class="text-slate-500">Fruits & Vegetables</p>
+                    <p class="text-slate-500">Snack & Spice</p>
+                    <p class="text-slate-500">Juice & Drinks</p>
+                    <p class="text-slate-500">Fast Food</p>
+                </div>
+                <div class="p-[12px] space-y-4  w-[450px]">
+                    <h3 class="text-2xl font-[500] ">Newsletter</h3>
+                    <p class="text-slate-500">Subscribe to get in touch</p>
+                    <input type="email" placeholder="Email" class="p-[12px] w-full relative outline-none">
+                    <i class="ri-telegram-2-fill absolute top-[1100px] right-[80px]"></i>
+                    <div class="flex gap-[10px]">
+                        <button class="bg-white py-[6px] px-[9px] rounded border-solid border-[1px] border-slate-200"><i class="ri-facebook-line"></i></button>
+                        <button class="bg-white py-[6px] px-[9px] rounded border-solid border-[1px] border-slate-200"><i class="ri-twitter-x-line"></i></button>
+                        <button class="bg-white py-[6px] px-[9px] rounded border-solid border-[1px] border-slate-200"><i class="ri-linkedin-line"></i></button>
+                        <button class="bg-white py-[6px] px-[9px] rounded border-solid border-[1px] border-slate-200"><i class="ri-instagram-line"></i></button>
+                    </div>
+    
+                    <div class="flex gap-8px justify-between rounded w-full">
+                        <img src="Images/android.png" alt="" class="w-[48%] rounded">
+                        <img src="Images/apple.png" alt="" class="w-[48%] rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid border-slate-200 border-[1px] bg-indigo-400 flex grow"></div>
+
+            <div class="bg-[#F7F7F8]  flex justify-between items-center mb-[50px] ">
+                <p class="flex text-slate-800 ">
+                    <i class="ri-copyright-line"></i>
+                    <label for="">2024 Carrot, All rights reserved.</label>
+                </p>
+                <img src="Images/payment.png" alt="" class="py-[12px]">
+             </div>
+         </footer>
+
+         
+    </div>
+</body>
+</html>

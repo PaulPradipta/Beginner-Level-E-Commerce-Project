@@ -1,0 +1,66 @@
+
+#hero {
+  padding:  32px 55px;
+  border-top: 1px solid #f5f5f5;
+}
+
+#slide-1 {
+  width: 100%;
+  height: 550px;
+  background: url('Images/2.jpg');
+  background-size: cover;
+  background-position: right;
+  border-radius: 32px;
+}
+
+#slide-2 {
+  width: 100%;
+  height: 550px;
+  background: url('Images/1.jpg');
+  background-size: cover;
+  background-position: right;
+  border-radius: 32px;
+}
+
+.cat-move:hover {
+  animation-name: shakeX;
+  animation-duration: 1.2s;
+}
+
+  .reduced-gap {
+    white-space: wrap;
+  }
+
+#great-deals {
+  height: 600px;
+  background-size: cover;
+  animation: fade 5s linear infinite;
+}
+
+@keyframes fade {
+  0% { background-image: url('Images/bg-deal-3.jpg');}
+  50% { background-image: url('Images/bg-deal-2.jpg');}
+  100% { background-image: url('Images/bg-deal-3.jpg');}
+}
+
+.latest-image .rtImg {
+  transition: transform 0.3s ease
+}
+
+.latest-image:hover .rtImg {
+  transform: scale(1.1) rotate(2deg)
+}
+
+.Effect .darkmode{
+  transition: 0.5s;
+}
+
+.Effect:hover .darkmode
+ {
+  display: flex;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.Effect:hover .darkmode i {
+  display: block;
+}

@@ -1,0 +1,54 @@
+.img-zoom {
+    cursor: crosshair;
+    position: relative;
+}
+
+.img-zoom:hover img{
+    animation: zoom 0.7s linear forwards;
+}
+
+.img-zoom:hover div{
+    display: flex;
+    animation: slidein 0.5s linear forwards;
+}
+
+@keyframes slidein{
+    from{ right: -120px}
+    to{ right: 10px}
+}
+
+@keyframes zoom {
+    from{ transform: scale(1);}
+    to{ transform: scale(2);}
+}
+
+/* @keyframes fadeIn {
+    from { 
+        background-color: white;
+        opacity: 0}
+
+    to { 
+        background-color: black;
+        opacity:0.65}
+} */
+
+@keyframes slideIn {
+    from { right:-370px}
+    to { right: 0px}
+}
+
+@keyframes slideOut {
+    from { right:0}
+    to {right: -370px}
+}
+
+#cart-overlay {
+    display: none;
+    z-index: 99;
+}
+
+/* #cart-list {
+    display: none;
+} */
+
+
